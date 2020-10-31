@@ -11,10 +11,10 @@ import org.openqa.selenium.support.FindBy;
 public class LoginPage extends BasePage {
 
 
-    @FindBy(id = "inputEmail")
+    @FindBy(xpath = "//input[@id='inputEmail']")
     protected WebElement userEmailInput;
 
-    @FindBy(id = "inputPassword")
+    @FindBy(xpath = "//input[@id='inputPassword']")
     protected WebElement passwordInput;
 
     @FindBy(xpath="//button[@type='submit']")

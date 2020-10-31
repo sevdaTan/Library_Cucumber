@@ -28,7 +28,7 @@ public class UsersPage extends BasePage{
 
         public void chooseStatus(){
         BrowserUtil.wait(1);
-        selectStatus.findElement(By.linkText("ACTIVE")).click();
+        selectStatus.findElement(By.linkText("INACTIVE")).click();
         }
 
 }

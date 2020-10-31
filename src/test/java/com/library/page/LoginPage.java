@@ -21,7 +21,7 @@ public class LoginPage extends BasePage {
     protected WebElement signInButton;
 
     public void login(){
-        String librarian_email = ConfigurationReader.getProperty("librarian_mail");
+        String librarian_email = ConfigurationReader.getProperty("librarian_email");
         String librarian_password = ConfigurationReader.getProperty("librarian_password");
         userEmailInput.sendKeys(librarian_email);
         passwordInput.sendKeys(librarian_password);

@@ -21,9 +21,9 @@ public class Hooks {
     @After
     public void driverDown() {
 
-        BrowserUtil.wait(4);
+        BrowserUtil.wait(5);
         Driver.closeDriver();
-        System.out.println("Automation is finished!!");
+        System.out.println("Automation is completed!!");
 
     }
 }

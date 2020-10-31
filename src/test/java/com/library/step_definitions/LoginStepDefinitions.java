@@ -27,11 +27,7 @@ public class LoginStepDefinitions {
     @When("the user logs in as a librarian")
     public void the_user_logs_in_as_a_librarian() {
 
-        String userName = ConfigurationReader.getProperty("librarian_email");
-        String password = ConfigurationReader.getProperty("librarian_password");
-        loginPage.userEmailInput.sendKeys(userName);
-        loginPage.passwordInput.sendKeys(password);
-        loginPage.signInButton.click();
+        loginPage.login();
 
     }
 

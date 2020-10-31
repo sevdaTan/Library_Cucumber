@@ -2,9 +2,7 @@ package com.library.step_definitions;
 
 import com.library.page.LoginPage;
 import com.library.page.UsersPage;
-import com.library.utils.BrowserUtil;
 import com.library.utils.ConfigurationReader;
-import com.library.utils.Driver;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -15,10 +13,10 @@ public class StatusStepDefinitions {
     UsersPage usersPage = new UsersPage();
 
 
-    @Given("user is on the homepage")
+    @Given("user is on the dashboard page")
     public void user_is_on_the_homepage() {
-        String getUrl = ConfigurationReader.getProperty("url");
-        Driver.getDriver().get(getUrl);
+        String url = ConfigurationReader.getProperty("url");
+        loginPage.login();
 
     }
 
@@ -37,7 +35,7 @@ public class StatusStepDefinitions {
 
     @Then("user chooses the {string} status")
     public void user_chooses_the_status(String status) {
-
+         usersPage.chooseStatus();
     }
 
 

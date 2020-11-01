@@ -1,4 +1,4 @@
-@Choose_Status
+@UsersFeature
 Feature: Users feature
   As a user, I want to be able to choose my status
 

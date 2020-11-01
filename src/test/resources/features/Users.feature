@@ -1,5 +1,5 @@
 @Choose_Status
-Feature: Choosing Status
+Feature: Users feature
   As a user, I want to be able to choose my status
 
   Background: common steps

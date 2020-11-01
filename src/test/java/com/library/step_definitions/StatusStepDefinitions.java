@@ -16,7 +16,10 @@ public class StatusStepDefinitions {
 
     @Given("user is on the dashboard page")
     public void user_is_on_the_homepage() {
-        Driver.getDriver().get(ConfigurationReader.getProperty("url"));
+//        Driver.getDriver().get(ConfigurationReader.getProperty("url"));
+//        loginPage.login();
+        String url = ConfigurationReader.getProperty("url");
+        Driver.getDriver().get(url);
         loginPage.login();
 
     }

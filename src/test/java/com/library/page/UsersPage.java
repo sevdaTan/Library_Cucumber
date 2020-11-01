@@ -32,4 +32,21 @@ public class UsersPage extends BasePage {
         selectStatus.selectByVisibleText("INACTIVE");
     }
 
+    @FindBy(id = "user_groups")
+    protected  WebElement userGroupBox;
+
+
+    public void clickUserGroupBox() {
+        BrowserUtil.wait(1);
+        userGroupBox.click();
+    }
+
+    public void chooseGroup() {
+        BrowserUtil.wait(1);
+        Select selectGroup = new Select(driver.findElement(By.id("user_groups")));
+        selectGroup.selectByVisibleText("Librarian");
+    }
+
+
+
 }

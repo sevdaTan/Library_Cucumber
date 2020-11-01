@@ -11,3 +11,7 @@ Feature: Books feature
     When user clicks on the book categories input box
     Then user chooses the book type as "Short Story"
 
+    @bookRecord
+    Scenario: Showing book record
+      When user clicks on the Show "15" record
+      Then user is able to see the chosen amount of record

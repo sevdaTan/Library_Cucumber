@@ -31,4 +31,20 @@ public class BooksPage extends BasePage {
         selectBookType.selectByVisibleText("Crime and Detective");
     }
 
+    @FindBy(name = "tbl_books_length")
+    protected WebElement numberOfBooksBox;
+
+    public void clickBookRecordsBox() {
+        BrowserUtil.wait(1);
+        numberOfBooksBox.click();
+    }
+
+    public void chooseBookNumber() {
+        BrowserUtil.wait(1);
+        Select selectBookNumber = new Select(driver.findElement(By.name ("tbl_books_length")));
+        selectBookNumber.selectByVisibleText("15");
+    }
+
+
+
 }

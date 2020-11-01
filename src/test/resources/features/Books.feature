@@ -1,4 +1,4 @@
-@BooksFeature
+@BooksFeature @smoke
 Feature: Books feature
   As a user, I should be able to select the type of the book from Book Categories
 

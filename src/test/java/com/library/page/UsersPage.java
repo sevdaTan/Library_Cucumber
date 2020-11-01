@@ -47,6 +47,19 @@ public class UsersPage extends BasePage {
         selectGroup.selectByVisibleText("Librarian");
     }
 
+    @FindBy(name = "tbl_users_length")
+    protected WebElement numberOfUsersBox;
+
+    public void clickUsersRecordsBox() {
+        BrowserUtil.wait(1);
+        numberOfUsersBox.click();
+    }
+
+    public void chooseUsersNumber() {
+        BrowserUtil.wait(1);
+        Select selectUserNumber = new Select(driver.findElement(By.name ("tbl_users_length")));
+        selectUserNumber.selectByVisibleText("50");
+    }
 
 
 }

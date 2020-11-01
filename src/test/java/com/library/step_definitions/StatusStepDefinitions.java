@@ -3,6 +3,7 @@ package com.library.step_definitions;
 import com.library.page.LoginPage;
 import com.library.page.UsersPage;
 import com.library.utils.ConfigurationReader;
+import com.library.utils.Driver;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -15,7 +16,7 @@ public class StatusStepDefinitions {
 
     @Given("user is on the dashboard page")
     public void user_is_on_the_homepage() {
-        String url = ConfigurationReader.getProperty("url");
+        Driver.getDriver().get(ConfigurationReader.getProperty("url"));
         loginPage.login();
 
     }

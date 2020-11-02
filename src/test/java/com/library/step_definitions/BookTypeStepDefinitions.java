@@ -15,18 +15,7 @@ import io.cucumber.java.en.When;
 
 public class BookTypeStepDefinitions {
 
-    LoginPage loginPage = new LoginPage();
     BooksPage booksPage = new BooksPage();
-
-//    @Given("user is on the dashboard page")
-//    public void user_is_on_the_homepage() {
-////        Driver.getDriver().get(ConfigurationReader.getProperty("url"));
-////        loginPage.login();
-//        String url = ConfigurationReader.getProperty("url");
-//        Driver.getDriver().get(url);
-//        loginPage.login();
-//
-//    }
 
     @And("user clicks on the Books tab")
     public void userClicksOnTheBooksTab() {
